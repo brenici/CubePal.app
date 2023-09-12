@@ -88,3 +88,30 @@ URL parameters are used to convey information to the CubePal app. These paramete
 |   |   | Example: https://www.cubepal.app/alg?rec=R-_F_U_R <br />Opens the reconstructed cube using the `R U' F R'` sequence. |
 | `pat` |  <pre>pat=R-_F_U_R</pre>  |  Specifies a particular cube pretty pattern. |
 |   |   | Example: https://www.cubepal.app/alg?pat=R-_F_U_R <br />Opens the cube pattern using the `R U' F R'` sequence. |
+| `cube` |  <pre>cube=</pre>   |  Specifies a particular cube size (dimension). <br />Both parameter and its value are optional. Default value is `3x3x3`. |
+|   |   | Example 1: https://www.cubepal.app/alg?=R-_F_U_R&cube= <br /> Example 2: https://www.cubepal.app/alg?=R-_F_U_R<br />Both examples open the `R U' F R'` algorithm and the `3x3x3` cube. |
+|   |  <pre>cube=2x2x2</pre>  |  Specifies a 2x2x2 cube. <br />Equivalent values: `2`, `2x2`, `pocket`, `mini`. |
+|   |   | Example 1: https://www.cubepal.app/alg?=R-_F_U_R&cube=2x2x2 <br />Example 2: https://www.cubepal.app/alg?=R-_F_U_R&cube=mini <br />Both examples open the `R U' F R'` algorithm and the `2x2x2` cube. |
+|   |  <pre>cube=3x3x3</pre>  |  Specifies a 3x3x3 cube. Parameter and value are optional for 3x3x3 cube. <br />Equivalent values: `3`, `3x3`, `rubik`, `magic`. |
+|   |   | Example 1: https://www.cubepal.app/alg?=R-_F_U_R&cube=3x3x3 <br />Example 2: https://www.cubepal.app/alg?=R-_F_U_R <br />Both examples open the `R U' F R'` algorithm and the `3x3x3` cube. |
+|   |  <pre>cube=4x4x4</pre>  |  Specifies a 4x4x4 cube. <br />Equivalent values: `4`, `4x4`, `revenge`, `master`. |
+|   |   | Example 1: https://www.cubepal.app/alg?=R-_F_U_R&cube=4x4x4<br />Example 2: https://www.cubepal.app/alg?=R-_F_U_R&cube=revenge <br />Both examples open the `R U' F R'` algorithm and the `4x4x4` cube. |
+|   |  <pre>cube=5x5x5</pre>  |  Specifies a 5x5x5 cube. <br />Equivalent values: `5`, `5x5`, `professors`, `professor`. |
+|   |   | Example 1: https://www.cubepal.app/alg?=R-_F_U_R&cube=2x2x2<br />Example 2: https://www.cubepal.app/alg?=R-_F_U_R&cube=5<br />Both examples open the `R U' F R'` algorithm and the `5x5x5` cube. |
+| `super` |  <pre>super=</pre> | |
+| | <pre>super=none</pre> |  Equivalent values: `classic`, `standard` |
+| | <pre>super=triangles</pre> | Equivalent values: `triangle`, `triangular` |
+| | <pre>super=arrowheads</pre> | Equivalent value: `arrowhead` |
+| | <pre>super=arrows</pre> | Equivalent values: `arrow`, `arr`, `shepherd` |
+| | <pre>super=hint</pre> | Equivalent values: `hints`, `pochmann`, `poch` |
+| `mod` | <pre>mod=</pre> | | 
+| | <pre>mod=small</pre> | Equivalent value: `classic` | 
+| | <pre>mod=large</pre> | Equivalent value: `stickerless` | 
+| | <pre>mod=carbon</pre> | Equivalent values: `fiber` | 
+| `core` | <pre>core=</pre> | | 
+| | <pre>core=black</pre> | Equivalent values: `b`, `dark` | 
+| | <pre>core=white</pre> | Equivalent values: `w`, `light` | 
+| `scheme` | <pre>scheme=</pre> | | 
+| | <pre>scheme=western</pre> | Equivalent value: `boy`, `west` | 
+| | <pre>scheme=japanese</pre> |  Equivalent value: `jap` | 
+| | <pre>scheme=custom</pre> |  | 
