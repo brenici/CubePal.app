@@ -14,7 +14,7 @@ CubePal Links is an implemetation of the Universal Links (also referred to as Ap
 
 ### *Why Using CubePal Links*
 
-CubePal Links enable users to create, store, and share custom Universal Links. These links can be generated within the CubePal app or written manually and stored anywhere, including websites, other apps, or local storage. This feature simplifies the sharing of algorithms, allowing anyone to effortlessly open the algorithms and learn them using virtual cubes within the CubePal app on their mobile devices.
+CubePal Links enable users to create, store, and share custom cubes and algorithms. These links can be generated within the CubePal app or written manually and stored anywhere, including websites, other apps, or local storage. This feature simplifies the sharing of algorithms, allowing anyone to effortlessly open and learn them using virtual cubes within the CubePal app on their mobile devices.
 
 ## Prerequisites
 Before you start using CubePal Links or at least if you want to test them on a mobile device, ensure that you meet the following requirements:
@@ -78,15 +78,15 @@ URL parameters are used to convey information to the CubePal app. These paramete
 
 |  Parameter  | Value  |  Functionality  |
 |---|---|---|
-| `alg` | <pre>alg=R-_F_U2_R</pre> |  Specifies a particular algorithm (sequence of cube turns) separated by underscore `_`. <br />Inverted turns `'` are represented by dash sign `-`. |
+| `alg` | <pre>alg=R-_F_U2_R</pre> |  Specifies a particular algorithm[^1] (sequence of cube turns) separated by underscore `_`. <br />Inverted turns `'` are represented by dash sign `-`. |
 |   |   | Example: https://www.cubepal.app/alg?alg=R-_F_U2_R <br />Opens the algorithm: `R' F U2 R` |
 | ` ` |  <pre>=R_U-_F_R-</pre> | Empty parameter has the same funtionality as `alg`. <br />The parameter's name can be omitted only when the sequence is an algorithm. |
 |   |   | Example: https://www.cubepal.app/alg?=R_U-_F_R- <br />Opens the algorithm: `R U' F R'` |
-| `scr` |  <pre>scr=R-_F_U_R</pre> |  Specifies a particular cube scramble.|
+| `scr` |  <pre>scr=R-_F_U_R</pre> |  Specifies a particular cube scramble.[^2]|
 |   |   | Example: https://www.cubepal.app/alg?scr=R-_F_U_R <br />Opens the cube in its scrambled state using the `R U' F R'` scramble. |
-| `rec` |  <pre>rec=R-_F_U_R</pre>  |  Specifies a particular cube reconstruction. |
+| `rec` |  <pre>rec=R-_F_U_R</pre>  |  Specifies a particular cube reconstruction[^3]. |
 |   |   | Example: https://www.cubepal.app/alg?rec=R-_F_U_R <br />Opens the reconstructed cube using the `R U' F R'` sequence. |
-| `pat` |  <pre>pat=E_S-_E-_S</pre>  |  Specifies a particular cube pretty pattern. |
+| `pat` |  <pre>pat=E_S-_E-_S</pre>  |  Specifies a particular cube pretty pattern[^4]. |
 |   |   | Example: https://www.cubepal.app/alg?pat=E_S-_E-_S <br />Opens the cube pattern using the `E S' E' S` sequence. |
 | `cube` |  <pre>cube=</pre>   |  Specifies a particular cube size (dimension). <br />Both parameter and its value are optional. Default cube size: `3x3x3`. |
 |   |   | Example 1: https://www.cubepal.app/alg?=R-_F_U_R&cube= <br /> Example 2: https://www.cubepal.app/alg?=R-_F_U_R<br />Both examples open the `R U' F R'` algorithm with a `3x3x3` cube. |
@@ -100,9 +100,9 @@ URL parameters are used to convey information to the CubePal app. These paramete
 |   |   | Example 1: https://www.cubepal.app/alg?=R-_F_U_R&cube=2x2x2<br />Example 2: https://www.cubepal.app/alg?=R-_F_U_R&cube=5<br />Both examples open the `R U' F R'` algorithm with a `5x5x5` cube. |
 | `name` |  <pre>name=T_Perm</pre> | Specifies the name of the algorithm. <br />Algorithm name words should be separated by underscore `_` |
 | | | Example 1: https://www.cubepal.app/alg?pat=M2_E2_S2&name=Checkerboard <br />Opens the cube with the checkerboard pattern using the `M2 E2 S2` sequence<br />Example 2: https://www.cubepal.app/alg?=R_U_R-_U-_R-_F_R2_U-_R-_U-_R_U_R-_F-&name=T_Perm <br /> Opens the T Perm algorithm `R U R' U' R' F R2 U' R' U' R U R' F'` |
-| `super` |  <pre>super=</pre> | Specifies the type of supercube. <br />Default supercube: `arrows` - a supercube with arrow stickers. <br />Note: If `super` parameter is omited, a default cube (not supercube) is shown. |
+| `super` |  <pre>super=</pre> | Specifies the type of supercube[^5]. <br />Default supercube: `arrows` - a supercube with arrow stickers. <br />Note: If `super` parameter is omited, a default cube (not supercube) is shown. |
 |   |   | Example: https://www.cubepal.app/alg?=R-_F_U_R&super= <br />Opens a default supercube with arrow stickers. |
-| | <pre>super=none</pre> | Specifies a classic cube - not a supercube. <br />Equivalent values: `classic`, `standard` |
+| | <pre>super=none</pre> | Specifies a classic cube - not a supercube. <br />Equivalent values: `classic`, `standard`, `regular` |
 |   |   | Example: https://www.cubepal.app/alg?=R-_F_U_R&super=none<br />Opens the algorithm and a classic cube. |
 | | <pre>super=arrows</pre> | Specifies a supercube with arrow stickers. <br />Equivalent values: `arrow`, `arr`, `shepherd` |
 |   |   | Example: https://www.cubepal.app/alg?=R-_F_U_R&super=arrows<br />Opens the algorithm and a supercube with arrow stickers. |
@@ -114,13 +114,13 @@ URL parameters are used to convey information to the CubePal app. These paramete
 |   |   | Example: https://www.cubepal.app/alg?=R-_F_U_R&super=hint<br />Opens the algorithm and a supercube with hint stickers. |
 | `mod` | <pre>mod=</pre> | Specifies the cube stickers mod. <br />Default mod: `small`. | 
 |   |   | Example: https://www.cubepal.app/alg?=R-_F_U_R&mod=<br />Parameter is ignored and opens a cube with default small rounded stickers. |
-| | <pre>mod=small</pre> | Specifies a mod with small classic stickers. <br/>Equivalent value: `classic` | 
+| | <pre>mod=small</pre> | Specifies a mod with small classic stickers. <br/>Equivalent value: `classic`, `standard`, `regular` | 
 |   |   | Example: https://www.cubepal.app/alg?=R-_F_U_R&mod=small<br />Opens the algorithm and a cube with small rounded stickers. |
 | | <pre>mod=large</pre> | Specifies a mod with large borderless stickers. <br/>Equivalent value: `stickerless`, `borderless` | 
 |   |   | Example: https://www.cubepal.app/alg?=R-_F_U_R&mod=large<br />Opens the algorithm and a cube with large borderless stickers. |
 | | <pre>mod=carbon</pre> | Specifies a mod with carbon stickers. | 
 |   |   | Example: https://www.cubepal.app/alg?=R-_F_U_R&mod=carbon<br />Opens the algorithm and a cube with carbon rounded stickers. |
-| `core` | <pre>core=</pre> | Specifies the cube core. <br />Default core: `black`. |
+| `core` | <pre>core=</pre> | Specifies the cube core or body color or material. <br />Default core: `black`. |
 |   |   | Example: https://www.cubepal.app/alg?=R-_F_U_R&core=<br />Paramater with empty value is ignored, and opens a cube with a default black core. |
 | | <pre>core=black</pre> | Specifies a black or dark core. <br />Equivalent values: `b`, `dark` | 
 |   |   | Example: https://www.cubepal.app/alg?=R-_F_U_R&core=black<br />Opens the algorithm and a cube with black core. |
@@ -128,9 +128,9 @@ URL parameters are used to convey information to the CubePal app. These paramete
 |   |   | Example: https://www.cubepal.app/alg?=R-_F_U_R&core=white<br />Opens the algorithm and a cube with white core. |
 | `scheme` | <pre>scheme=</pre> | Specifies the color scheme of the cube. <br />Default scheme: `western`. | 
 |   |   | Example: https://www.cubepal.app/alg?=R-_F_U_R&scheme=<br />Paramater with empty value is ignored, and opens a cube with a western color scheme. |
-| | <pre>scheme=western</pre> | Specifies the western or BOY color scheme. <br />Equivalent value: `boy`, `west` | 
+| | <pre>scheme=western</pre> | Specifies the western or BOY color scheme (Blue-Green, Orange-Red, Yellow-White color pairs). <br />Equivalent value: `boy`, `west` | 
 |   |   | Example: https://www.cubepal.app/alg?=R-_F_U_R&scheme=western<br />Opens the algorithm and a cube with a western color scheme. |
-| | <pre>scheme=japanese</pre> | Specifies the western or BOY color scheme. <br />Equivalent value: `jap`, `jpn` | 
+| | <pre>scheme=japanese</pre> | Specifies the Japanese color scheme (Yellow-Green, Orange-Red, Blue-White color pairs). <br />Equivalent value: `jap`, `jpn` | 
 |   |   | Example: https://www.cubepal.app/alg?=R-_F_U_R&scheme=japanese<br />Opens the algorithm and a cube with a japanese color scheme. |
 | | <pre>scheme=custom</pre> | Specifies the custom color scheme as defined by the user. | 
 |   |   | Example: https://www.cubepal.app/alg?=R-_F_U_R&scheme=custom<br />Opens the algorithm and a cube with a custom color scheme. |
@@ -146,3 +146,11 @@ CubePal's functionality and parameters vary depending on the app version you are
 ## Legal Note
 
 CubePal Links are distributed under MIT License, which grants users the freedom to create, use and distribute them without any restrictions.
+
+---------
+Notes:
+[^1]: `Algorithm` is a pre-established sequence of cube turns or moves designed to transform a scrambled or unsolved cube into the solved state. Algorithm sequence starts from the unsolved state of the cube.
+[^2]: `Scramble` is a sequence of cube turns or moves applied to a solved cube creating a randomly shuffled arrangement of its pieces, usually used for solving competitions. Scramble sequence starts from the solved state of the cube.
+[^3]: `Reconstruction` is a sequence of cube turns or moves that represents a detailed record of the exact turns applied by someone to the cube, from its initial scrambled state to its final solved state. Reconstruction sequence starts from the unsolved state of the cube.
+[^4]: `Pattern` is a sequence of cube turns or moves applied to a solved cube, resulting in a visually appealing and/or symmetric arrangement of colors or stickers on its faces used for artistic and aesthetic purposes. Pattern sequence starts from the solved state of the cube.
+[^5]: `Supercube` is a modified version of a standard cube where the additional challenge lies in the requirement to also solve/align the centerpieces, making it more difficult to solve than a regular cube.
