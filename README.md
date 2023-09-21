@@ -78,23 +78,23 @@ URL parameters are used to convey information to the CubePal app. These paramete
 
 |  Parameter  | Value  |  Functionality  |
 |---|---|---|
-| `alg` | <pre>alg=R-_F_U2_R</pre> |  Specifies a particular algorithm[^1] (sequence of cube turns) separated by underscore `_`. <br />Inverted turns `'` are represented by dash sign `-`. |
+| `alg` | <pre>alg=R-_F_U2_R</pre> |  Specifies a particular algorithm[^1] (sequence of cube turns) separated by underscore `_`. <br />Inverted turns `'` are represented by dash sign `-`. <br /> Equivalent parameter name: `algorithm` | |
 |   |   | Example: https://www.cubepal.app/alg?alg=R-_F_U2_R <br />Opens the algorithm: `R' F U2 R` |
 | ` ` |  <pre>=R_U-_F_R-</pre> | Empty parameter has the same funtionality as `alg`. <br />The parameter's name can be omitted only when the sequence is an algorithm. |
 |   |   | Example: https://www.cubepal.app/alg?=R_U-_F_R- <br />Opens the algorithm: `R U' F R'` |
-| `scr` |  <pre>scr=R-_F_U_R</pre> |  Specifies a particular cube scramble.[^2]|
+| `scr` |  <pre>scr=R-_F_U_R</pre> |  Specifies a particular cube scramble.[^2] <br /> Equivalent parameter name: `scramble` |
 |   |   | Example: https://www.cubepal.app/alg?scr=R-_F_U_R <br />Opens the cube in its scrambled state using the `R U' F R'` scramble. |
-| `rec` |  <pre>rec=R-_F_U_R</pre>  |  Specifies a particular cube reconstruction[^3]. |
+| `rec` |  <pre>rec=R-_F_U_R</pre>  |  Specifies a particular cube reconstruction[^3]. <br /> Equivalent parameter name: `reconstruction` |
 |   |   | Example: https://www.cubepal.app/alg?rec=R-_F_U_R <br />Opens the reconstructed cube using the `R U' F R'` sequence. |
-| `pat` |  <pre>pat=E_S-_E-_S</pre>  |  Specifies a particular cube pretty pattern[^4]. |
+| `pat` |  <pre>pat=E_S-_E-_S</pre>  |  Specifies a particular cube pretty pattern[^4]. <br /> Equivalent parameter name: `pattern` |
 |   |   | Example: https://www.cubepal.app/alg?pat=E_S-_E-_S <br />Opens the cube pattern using the `E S' E' S` sequence. |
 | `cube` |  <pre>cube=</pre>   |  Specifies a particular cube size (dimension). <br />Both parameter and its value are optional. Default cube size: `3x3x3`. |
 |   |   | Example 1: https://www.cubepal.app/alg?=R-_F_U_R&cube= <br /> Example 2: https://www.cubepal.app/alg?=R-_F_U_R<br />Both examples open the `R U' F R'` algorithm with a `3x3x3` cube. |
 |   |  <pre>cube=2x2x2</pre>  |  Specifies a 2x2x2 cube. <br />Equivalent values: `2`, `2x2`, `pocket`, `mini`. |
 |   |   | Example 1: https://www.cubepal.app/alg?=R-_F_U_R&cube=2x2x2 <br />Example 2: https://www.cubepal.app/alg?=R-_F_U_R&cube=mini <br />Both examples open the `R U' F R'` algorithm with a `2x2x2` cube. |
-|   |  <pre>cube=3x3x3</pre>  |  Specifies a 3x3x3 cube. Parameter and value are optional for 3x3x3 cube. <br />Equivalent values: `3`, `3x3`, `rubik`, `magic`. |
+|   |  <pre>cube=3x3x3</pre>  |  Specifies a 3x3x3 cube. Parameter and value are optional for 3x3x3 cube. <br />Equivalent values: `3`, `3x3`, `rubik`, `rubiks`, `magic`. |
 |   |   | Example 1: https://www.cubepal.app/alg?=R-_F_U_R&cube=3x3x3 <br />Example 2: https://www.cubepal.app/alg?=R-_F_U_R <br />Both examples open the `R U' F R'` algorithm with a `3x3x3` cube. |
-|   |  <pre>cube=4x4x4</pre>  |  Specifies a 4x4x4 cube. <br />Equivalent values: `4`, `4x4`, `revenge`, `master`. |
+|   |  <pre>cube=4x4x4</pre> | Specifies a 4x4x4 cube. <br />Equivalent values: `4`, `4x4`, `revenge`, `master`. |
 |   |   | Example 1: https://www.cubepal.app/alg?=R-_F_U_R&cube=4x4x4<br />Example 2: https://www.cubepal.app/alg?=R-_F_U_R&cube=revenge <br />Both examples open the `R U' F R'` algorithm with a `4x4x4` cube. |
 |   |  <pre>cube=5x5x5</pre>  |  Specifies a 5x5x5 cube. <br />Equivalent values: `5`, `5x5`, `professors`, `professor`. |
 |   |   | Example 1: https://www.cubepal.app/alg?=R-_F_U_R&cube=2x2x2<br />Example 2: https://www.cubepal.app/alg?=R-_F_U_R&cube=5<br />Both examples open the `R U' F R'` algorithm with a `5x5x5` cube. |
