@@ -2,7 +2,7 @@
 
 ### *About CubePal*
 
-CubePal is an iOS app designed for learning algorithms and solving virtual 2x2x2, 3x3x3, 4x4x4, and 5x5x5 cubes and supercubes.
+CubePal is an iOS app designed for learning new algorithms and solving various virtual 2x2x2, 3x3x3, 4x4x4, and 5x5x5 cubes and supercubes.
 
 You can download the FREE CubePal app on the [App Store](https://apps.apple.com/app/cubepal/id1501885433).
 
@@ -69,10 +69,10 @@ URL parameters are used to convey information to the CubePal app. These paramete
   https://www.cubepal.app/alg?cube=4x4x4&alg=R-_F_U_R&scheme=japanese
   ```
 - You can omit any parameter except the algorithm sequence.
-- The algorithm sequence should contain at least two turns or moves.
+- The algorithm sequence should consist of a minimum of 2 and a maximum of 80 turns or moves.
 - While the order of the parameters can be changed, for the sake of consistency, it is recommended to use the order outlined in the table below.
-- Algorithms turns should be separated by underscores `_` (recommended for readability) or by percent-encoded spaces `%20`.
-- Algorithm turns and algorithm name are the only parameters with case sensitive values.
+- Algorithms turns or moves should be separated by underscores `_` (recommended for readability) or by percent-encoded spaces `%20`.
+- Algorithm sequence and algorithm name are the only parameters with case sensitive values.
 
 ### Parameters
 
@@ -146,6 +146,22 @@ CubePal's functionality and parameters vary depending on the app version you are
 ## Legal Note
 
 CubePal Links are distributed under the MIT License, which grants users the freedom to create, use and distribute them without any restrictions.
+
+## FAQ
+
+*Question:*
+
+Why doesn't the CubePal Link open in the app?
+
+*Answer:*
+
+If you're experiencing the situation when the CubePal Link doesn't open in the app, please follow the following steps:
+
+1. Ensure you tap the link on an iOS device: CubePal Links are designed to work on mobile devices. Make sure you are tapping the link on your iPhone of iPad where the CubePal app is already installed.
+   
+2. Ensure the latest version of the CubePal app is installed: CubePal Links functionality was introduced for beta testing in version 2.5 of the app and fully implemented in version 2.6. Please check for updates in the App Store.
+
+3. The link still opens in a webpage? In some cases, CubePal Links may open in Safari on your mobile device rather than the app. If this happens, tap the Open button on the Smart App Banner at the top of the webpage. This will redirect you to the CubePal app.
 
 ---------
 Notes:
