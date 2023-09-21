@@ -32,9 +32,9 @@ Additionally, you must include URL parameters to pass information to the CubePal
 
 ## Using CubePal Links
 
-Using CubePal Links is straightforward. Feel free to utilize CubePal Links for your personal needs or share them with others through any platform or technology of your choice.
+Using CubePal Links is straightforward. Feel free to use CubePal Links for your personal needs or share them with others through any platform or technology of your choice.
 
-1. **Tap the Link**: To open the CubePal app with a specific action or content, simply tap on the CubePal Link you've either created or saved. The app will automatically launch and open the respective cube and algorithm.
+1. **Tap the Link**: To open the CubePal app with a specific cube or algorithm, simply tap on the CubePal Link you've either created or saved on your mobile device. The app will automatically launch and open the respective cube and algorithm.
 
 2. **Versatile Accessibility**: CubePal Links can be initiated from various sources, including files, emails, notes and other apps on your iOS device.
 
@@ -52,7 +52,7 @@ You can generate CubePal Links within the CubePal app using current cube and alg
 - Write the link manually in the appropriate format described in this documentation.
 - Ensure that you include the necessary parameters, as listed in the Parameters section.
 - Save the link in your preferred location, such as websites, other apps, or local storage.
-- Tip: Use the app to test the newly created link before sharing it.
+- Tip: Use the CubePal app to test manually created links before sharing them.
 
 ## CubePal Link Parameters
 
@@ -128,9 +128,9 @@ URL parameters are used to convey information to the CubePal app. These paramete
 |   |   | Example: https://www.cubepal.app/alg?=R-_F_U_R&core=white<br />Opens the algorithm and a cube with white core. |
 | `scheme` | <pre>scheme=</pre> | Specifies the color scheme of the cube. <br />Default scheme: `western`. | 
 |   |   | Example: https://www.cubepal.app/alg?=R-_F_U_R&scheme=<br />Paramater with empty value is ignored, and opens a cube with a western color scheme. |
-| | <pre>scheme=western</pre> | Specifies the western or BOY color scheme (Blue-Green, Orange-Red, Yellow-White color pairs). <br />Equivalent value: `boy`, `west` | 
+| | <pre>scheme=western</pre> | Specifies the western or BOY color scheme (Blue-Green, Orange-Red, Yellow-White color pairs for opposite cube faces). <br />Equivalent value: `boy`, `west` | 
 |   |   | Example: https://www.cubepal.app/alg?=R-_F_U_R&scheme=western<br />Opens the algorithm and a cube with a western color scheme. |
-| | <pre>scheme=japanese</pre> | Specifies the Japanese color scheme (Yellow-Green, Orange-Red, Blue-White color pairs). <br />Equivalent value: `jap`, `jpn` | 
+| | <pre>scheme=japanese</pre> | Specifies the Japanese color scheme (Yellow-Green, Orange-Red, Blue-White color pairs for opposite cube faces). <br />Equivalent value: `jap`, `jpn` | 
 |   |   | Example: https://www.cubepal.app/alg?=R-_F_U_R&scheme=japanese<br />Opens the algorithm and a cube with a japanese color scheme. |
 | | <pre>scheme=custom</pre> | Specifies the custom color scheme as defined by the user. | 
 |   |   | Example: https://www.cubepal.app/alg?=R-_F_U_R&scheme=custom<br />Opens the algorithm and a cube with a custom color scheme. |
@@ -139,9 +139,9 @@ URL parameters are used to convey information to the CubePal app. These paramete
 
 CubePal's functionality and parameters vary depending on the app version you are using:
 
-- **Free Version:** All features and parameters discussed in this documentation are fully available for the 3x3x3 cube. For other cube sizes, please consider upgrading to the Pro Version of the app. You can download the FREE CubePal app on the [App Store](https://apps.apple.com/app/cubepal/id1501885433).
+- **Free Version:** All features and parameters mentioned in this documentation are fully available for the 3x3x3 cube. For other cube sizes, please consider upgrading to the Pro Version of the app. You can download the FREE CubePal app on the [App Store](https://apps.apple.com/app/cubepal/id1501885433).
 
-- **Pro Version:** The Pro Version extends CubePal's capabilities to cover all cubes. If you wish to explore more and beyond the 3x3x3 cube, we recommend upgrading to the Pro Version of the app.
+- **Pro Version:** The Ads Free Pro Version extends CubePal's unlimited capabilities to all cubes. If you wish to explore more and beyond the 3x3x3 cube, we recommend upgrading to the Pro Version of the app.
 
 ## Legal Note
 
