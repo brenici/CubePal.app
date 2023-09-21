@@ -10,7 +10,7 @@ For additional information, please visit the app's landing page at [www.cubepal.
 
 ### *About Universal Links*
 
-CubePal Links is an implemetation of the Universal Links (also referred to as App Links or Deep Links) are web URLs that, when tapped on a mobile device, seamlessly open the associated app, triggering specific actions or features defined by the link's parameters. CubePal allows users to generate, export, share, modify, and use their own Universal Links as described below.
+CubePal Links is an implementation of the Universal Links (also referred to as App Links or Deep Links) that are web URLs that, when tapped on a mobile device, directly open them in an associated app, triggering specific actions or features defined by the link's parameters. CubePal app allows users to generate, export, share, modify, and use their own Universal Links as described below.
 
 ### *Why Using CubePal Links*
 
@@ -80,7 +80,7 @@ URL parameters are used to convey information to the CubePal app. These paramete
 |---|---|---|
 | `alg` | <pre>alg=R-_F_U2_R</pre> |  Specifies a particular algorithm[^1] (sequence of cube turns) separated by underscore `_`. <br />Inverted turns `'` are represented by dash sign `-`. <br /> Equivalent parameter name: `algorithm` | |
 |   |   | Example: https://www.cubepal.app/alg?alg=R-_F_U2_R <br />Opens the algorithm: `R' F U2 R` |
-| ` ` |  <pre>=R_U-_F_R-</pre> | Empty parameter has the same funtionality as `alg`. <br />The parameter's name can be omitted only when the sequence is an algorithm. |
+| ` ` |  <pre>=R_U-_F_R-</pre> | Empty parameter has the same functionality as `alg`. <br />The parameter's name can be omitted only when the sequence is an algorithm. |
 |   |   | Example: https://www.cubepal.app/alg?=R_U-_F_R- <br />Opens the algorithm: `R U' F R'` |
 | `scr` |  <pre>scr=R-_F_U_R</pre> |  Specifies a particular cube scramble.[^2] <br /> Equivalent parameter name: `scramble` |
 |   |   | Example: https://www.cubepal.app/alg?scr=R-_F_U_R <br />Opens the cube in its scrambled state using the `R U' F R'` scramble. |
@@ -141,11 +141,11 @@ CubePal's functionality and parameters vary depending on the app version you are
 
 - **Free Version:** All features and parameters mentioned in this documentation are fully available for the 3x3x3 cube. For other cube sizes, please consider upgrading to the Pro Version of the app. You can download the FREE CubePal app on the [App Store](https://apps.apple.com/app/cubepal/id1501885433).
 
-- **Pro Version:** The Ads Free Pro Version extends CubePal's unlimited capabilities to all cubes. If you wish to explore more and beyond the 3x3x3 cube, we recommend upgrading to the Pro Version of the app.
+- **Pro Version:** The Ad-Free Pro Version extends CubePal's unlimited capabilities to all cubes. If you wish to explore more and beyond the 3x3x3 cube, we recommend upgrading to the Pro Version of the app.
 
 ## Legal Note
 
-CubePal Links are distributed under MIT License, which grants users the freedom to create, use and distribute them without any restrictions.
+CubePal Links are distributed under the MIT License, which grants users the freedom to create, use and distribute them without any restrictions.
 
 ---------
 Notes:
