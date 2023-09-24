@@ -1,14 +1,12 @@
-# CubePal Links
+# CubePal
 
-### *About CubePal*
-
-CubePal is an iOS app designed for learning new algorithms and solving various virtual 2x2x2, 3x3x3, 4x4x4, and 5x5x5 cubes and supercubes.
+CubePal is an iOS application designed for learning new algorithms and solving virtual 2x2x2, 3x3x3, 4x4x4 and 5x5x5 cubes and supercubes.
 
 You can download the FREE CubePal app on the [App Store](https://apps.apple.com/app/cubepal/id1501885433).
 
 For additional information, please visit the app's landing page at [www.cubepal.app](https://www.cubepal.app).
 
-### *About Universal Links*
+## *CubePal Links*
 
 CubePal Links is an implementation of the Universal Links (also referred to as App Links or Deep Links) that are web URLs that, when tapped on a mobile device, directly open them in an associated app, triggering specific actions or features defined by the link's parameters. CubePal app allows users to generate, export, share, modify, and use their own Universal Links as described below.
 
