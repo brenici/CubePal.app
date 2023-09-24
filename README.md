@@ -1,4 +1,8 @@
-# CubePal
+# CubePal App
+
+This repository is dedicated to cube-solving enthusiasts and software developers interested in exploring the CubePal's functionalities, extending its capabilities, and contributing to its improvement.
+
+### *About CubePal*
 
 CubePal is an iOS application designed for learning new algorithms and solving virtual 2x2x2, 3x3x3, 4x4x4 and 5x5x5 cubes and supercubes.
 
